@@ -16,7 +16,7 @@ $ npm install express-antiscan --save
 ```js
 var antiscan = require('express-antiscan');
 
-// time starts ticking from the moment req goes through the middleware
+// Add this as a last rule in express
 app.use(antiscan());
 ```
 
