@@ -1,21 +1,30 @@
 {
-  "name": "express-antiscan",
-  "version": "1.0.0",
-  "description": "Express.js middleware that prevents typical secyrity holes scanning",
-  "main": "index.js",
-  "repository": "elasticio/express-antiscan",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "expressjs"
-  ],
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "author": "Renat Zubairov <renat@elastic.io>",
-  "license": "MIT",
-  "dependencies": {
-    "debug": "~1.0.2"
-  }
+    "name": "express-antiscan",
+    "version": "1.0.0",
+    "description": "Express.js middleware that prevents typical secyrity holes scanning",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elasticio/express-antiscan.git"
+    },
+    "bugs": {
+        "mail": "renat.zubairov@elastic.io",
+        "url": "https://github.com/elasticio/express-antiscan/issues"
+    },
+    "keywords": [
+        "expressjs"
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "author": {
+        "name" : "Renat Zubairov",
+        "email" : "renat@elastic.io",
+        "url" : "http://elastic.io",
+        "twitter" : "https://twitter.com/zubairov"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "debug": "~1.0.2"
+    }
 }
