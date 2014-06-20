@@ -3,7 +3,8 @@
 [![NPM version](https://badge.fury.io/js/express-antiscan.svg)](http://badge.fury.io/js/express-antiscan)
 [![Build Status](https://travis-ci.org/elasticio/express-antiscan.svg?branch=master)](https://travis-ci.org/elasticio/express-antiscan)
 
-Response time middleware extracted from connect.
+Middleware that handles typical URIs related to web-site security exploits, e.g. Wordpress XMLRPC, it respond with HTTP 
+404 after configurable timeout to make the security exploit scanning more expensive for people who are doing it
 
 ## Installation
 
