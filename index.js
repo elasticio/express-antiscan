@@ -21,6 +21,7 @@ exports = module.exports = function(options) {
 
     return function handleScan(req,res,next) {
         var path = req.path, found;
+        debug(path);
         endpoints.forEach(function(endpoint) {
             if (endpoint === path) {
                 found = true;
