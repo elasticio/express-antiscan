@@ -7,7 +7,10 @@ describe('antiscan()', function () {
     var app = express();
 
     app.use(antiscan({
-        timeout : 500
+        timeout : 500,
+        endpoints : [
+            '/foo'
+        ]
     }));
 
     app.get('/', function(req,res) {
@@ -24,4 +27,7 @@ describe('antiscan()', function () {
         agent.get('/xmlrpc.php').expect(404, done);
     });
 
+    it('should respond with 404 on /foo', function(done) {
+        agent.get('/foo').expect(404, done);
+    });
 });
