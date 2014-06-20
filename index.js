@@ -22,11 +22,12 @@ exports = module.exports = function(options) {
     return function handleScan(req,res,next) {
         var path = req.path, found;
         endpoints.forEach(function(endpoint) {
-            if (endpoint === req.path) {
+            if (endpoint === path) {
                 found = true;
             }
         });
         if (found) {
+            debug('Found an endpoint that matched anti-scan list of endpoints "%s"', path);
             setTimeout(function() {
                 res.send(404, 'Not found');
             }, timeout);
@@ -53,4 +54,4 @@ function extend(obj, source) {
     }
 
     return obj;
-};
+}
