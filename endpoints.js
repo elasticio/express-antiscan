@@ -4,6 +4,8 @@ module.exports = function() {
         "/xmlrpc.php",
         "/wp-login.php",
         "/administrator/index.php",
-        /fckeditor/
+        /fckeditor/,
+        /webeditor/,
+        /filemanager/
     ]
 };
