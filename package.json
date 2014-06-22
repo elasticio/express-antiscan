@@ -1,6 +1,6 @@
 {
   "name": "express-antiscan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express.js middleware that prevents typical secyrity holes scanning",
   "main": "index.js",
   "repository": {
