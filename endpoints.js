@@ -3,6 +3,7 @@ module.exports = function() {
         "/public/js/fckeditor/editor/filemanager/upload/test.html",
         "/xmlrpc.php",
         "/wp-login.php",
-        "/administrator/index.php"
+        "/administrator/index.php",
+        /fckeditor/
     ]
 };

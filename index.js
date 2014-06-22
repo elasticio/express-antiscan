@@ -23,7 +23,9 @@ exports = module.exports = function(options) {
         var path = req.path, found;
         debug(path);
         endpoints.forEach(function(endpoint) {
-            if (endpoint === path) {
+            if (endpoint instanceof RegExp && !found) {
+                found = endpoint.test(path);
+            } else if (endpoint === path) {
                 found = true;
             }
         });
